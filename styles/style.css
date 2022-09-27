@@ -1,0 +1,110 @@
+body{
+    text-align: center;
+    background-image: url(./assets/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg);
+    
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+footer{
+color: white;
+position: fixed;
+bottom: 0%;
+right: 0%;
+}
+.stage{
+    margin-top: 10%;
+}
+.square{
+    width: 200px;
+    height: 150px;
+    background-color: beige;
+    border: 1px solid gray;
+    display: inline-block;
+}
+
+.score{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -40opx;
+    margin: auto;
+    width: 400px;
+}
+.rest{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    background-color: beige;
+ 
+}
+.player{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    width: 150px;
+    height: 70px;
+    background-color: beige;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 35px;
+    
+}
+.icon1{
+left:50%;
+font-size: 200%;
+transform: translate(50%, 10%);
+}
+.icon2{
+left:50%;
+font-size: 200%;
+transform: translate(50%);
+}
+#scoreP1, #scoreP2 {
+    left: 50px;
+    font-size: 200%;
+}
+.o{
+    position: relative;
+}
+
+.o:after{
+    position: absolute;
+    content: "\1F6E1";
+    font-size: 100px;
+    line-height: 150px;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.x{
+    position: relative;
+}
+
+.x:after{
+    position: absolute;
+    content: "\2694";
+    font-size: 100px;
+    line-height: 150px;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+@media screen and (max-width: 450px) {
+    #player1 {
+        margin-left:15px;
+    }
+    #player2 {
+        margin-right: 20px;
+    }
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+}

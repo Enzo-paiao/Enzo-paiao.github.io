@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    
+    <title>Jogo da Velha</title>
+</head>
+
+<body>
+    <h1>Jogo da velha</h1>
+
+    <div class="stage">
+        <div>
+            <div id="0" class="square"></div>
+            <div id="1" class="square"></div>
+            <div id="2" class="square"></div>
+        </div>
+        <div>
+            <div id="3" class="square"></div>
+            <div id="4" class="square"></div>
+            <div id="5" class="square"></div>
+        </div>
+        <div>
+            <div id="6" class="square"></div>
+            <div id="7" class="square"></div>
+            <div id="8" class="square"></div>
+        </div>
+        <button class="rest" onclick="resetGame()">Reiniciar</button>
+    </div>
+    
+    <div class="score">
+        <div id="player1" class="player">
+            <span class="icon1">&#128737;</span>
+            <span id="scoreP1">0</span>
+        </div>
+        <div id="player2" class="player">
+            <span class="icon2">&#9876;</span>
+            <span id="scoreP2">0</span>
+        </div>
+    </div>
+
+    <footer>
+        <p> Image designed by <a href="https://br.freepik.com">Freepik</a> </p>
+    </footer>
+
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/interface.js"></script>
+    
+</body>
+
+</html>
